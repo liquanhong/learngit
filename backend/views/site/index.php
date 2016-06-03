@@ -44,17 +44,13 @@
         <li>
             <a href="#"><span class="icon icon-start"></span>内容管理</a>
             <ul>
-                <li><a href="main.html" target="main">主页页面</a></li>
-                <li><a href="<?=Url::to(['user/index'])?>" target="main">列表页面</a></li>
-                <li><a href="<?=Url::to(['user/add'])?>" target="main">表单页面</a></li>
+                <li><a href="<?=Url::to(['category/index'])?>" target="main">文章管理</a></li>
             </ul>
         </li>
         <li>
             <a href="#"><span class="icon icon-setting"></span>系统设置</a>
             <ul>
                 <li><a href="<?=Url::to(['user/index'])?>" target="main">用户管理</a></li>
-                <li><a href="#">文章设置</a></li>
-                <li><a href="#">文章设置</a></li>
             </ul>
         </li>
     </ul>

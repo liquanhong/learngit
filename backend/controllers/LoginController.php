@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: quanhong
- * Date: 2016/5/13
- * Time: 14:31
- */
+
 namespace backend\controllers;
 
 use backend\models\LoginForm;
