@@ -45,7 +45,12 @@ class CategoryController extends Controller
 
     public function actionDelete(){
         $select = \Yii::$app->request->post('selected');
-        var_dump($select);
+        if(Category::deleteData($select)){
+            \Yii::$app->session->setFlash('success', '删除文章分类成功');
+        }else{
+            \Yii::$app->session->setFlash('success', '删除文章分类失败');
+        }
+        return $this->redirect(['index']);
     }
 
 }

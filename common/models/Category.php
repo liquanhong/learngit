@@ -42,5 +42,10 @@ class Category extends ActiveRecord
         return ArrayHelper::merge(['0' => '父类'], ArrayHelper::map($data, 'id','name'));
 
     }
+    
+    public static function deleteData($select)
+    {
+        return Category::deleteAll(['id' => $select]);
+    }
 
 }
